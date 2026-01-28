@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Wi-Fi Risk Meter — Demo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>Wi-Fi Risk Meter</h1>
+      <p class="subtitle">Click START to scan nearby Wi-Fi networks (simulated demo)</p>
+    </header>
+
+    <section class="scanner">
+      <div id="dial" class="dial">
+        <div id="needle" class="needle"></div>
+        <div class="dial-center"></div>
+      </div>
+
+      <button id="startBtn" class="start-btn">START</button>
+      <div id="status" class="status">Ready</div>
+    </section>
+
+    <section id="resultsSection" class="results hidden">
+      <h2>Scan Results</h2>
+      <table id="resultsTable">
+        <thead>
+          <tr><th>SSID</th><th>Security</th><th>Risk</th><th>Score</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <div class="tips">
+        <h3>Quick tips</h3>
+        <ul>
+          <li>If network shows <strong>High Risk</strong>, avoid logging into personal accounts.</li>
+          <li>Use a VPN and prefer sites with HTTPS.</li>
+          <li>Connect only to networks that use WPA2 or WPA3.</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      <small>Demo for internship project • Simulated scan only</small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
